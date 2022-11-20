@@ -11,8 +11,13 @@ public class Destructible : MonoBehaviour
 
         if (hitPoints <= 0)
         {
-            hitPoints = 0;
-            Die.Invoke();
+            Kill();
         }
+    }
+
+    public void Kill()
+    {
+        hitPoints = 0;
+        Die.Invoke();
     }
 }

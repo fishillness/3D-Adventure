@@ -23241,6 +23241,7 @@ GameObject:
   - component: {fileID: 976508913}
   - component: {fileID: 976508912}
   - component: {fileID: 976508911}
+  - component: {fileID: 976508914}
   m_Layer: 0
   m_Name: Water (1)
   m_TagString: Untagged
@@ -23325,6 +23326,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976508909}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &976508914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976508909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e26854e07c04f46815fceca228ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &978223420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50874,6 +50887,7 @@ GameObject:
   - component: {fileID: 2038320424}
   - component: {fileID: 2038320423}
   - component: {fileID: 2038320425}
+  - component: {fileID: 2038320426}
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -50957,6 +50971,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 9.999999, y: 2.220446e-16, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2038320426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038320421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e26854e07c04f46815fceca228ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2042127115
 PrefabInstance:
   m_ObjectHideFlags: 0
