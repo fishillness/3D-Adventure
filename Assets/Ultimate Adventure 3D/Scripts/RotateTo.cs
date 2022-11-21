@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class RotateTo : MonoBehaviour
 {
-    [SerializeField] private float speed;
-    [SerializeField] private Vector3 target;
+	[SerializeField] private Transform targetTransform;
+	[SerializeField] private float speed;
+	[SerializeField] private Vector3 targetRotate;
 
-    private void Update()
-    {
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(target), speed * Time.deltaTime);
-    }
+	void Update()
+	{
+		targetTransform.localRotation = Quaternion.RotateTowards(targetTransform.localRotation, Quaternion.Euler(targetRotate), speed * Time.deltaTime);
+	}
 }
