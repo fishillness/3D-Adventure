@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIHealth : MonoBehaviour
+public class UIHealthImage : MonoBehaviour
 {
     [SerializeField] private Destructible destructible;
     [SerializeField] private Image image;
