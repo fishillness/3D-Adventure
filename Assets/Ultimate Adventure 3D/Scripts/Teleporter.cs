@@ -1,10 +1,16 @@
 using SimpleFPS;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class Teleporter : MonoBehaviour
 {
     [SerializeField] private Teleporter target;
     [HideInInspector] public bool IsReceive;
+    private new AudioSource audio;
+    private void Start()
+    {
+        audio = GetComponent<AudioSource>();
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (IsReceive == true) return;
@@ -15,6 +21,7 @@ public class Teleporter : MonoBehaviour
         {
             target.IsReceive = true;
 
+            audio.Play();
             fps.transform.position = target.transform.position;
         }
     }

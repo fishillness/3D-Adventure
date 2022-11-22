@@ -9737,7 +9737,7 @@ GameObject:
   - component: {fileID: 4430584083380216}
   - component: {fileID: 33283752916288740}
   - component: {fileID: 23822324861793620}
-  - component: {fileID: 1303815402087486151}
+  - component: {fileID: 1732756499}
   m_Layer: 0
   m_Name: BoneFire_01
   m_TagString: Untagged
@@ -9811,7 +9811,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!82 &1303815402087486151
+--- !u!82 &1732756499
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9831,8 +9831,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1.991806
-  MaxDistance: 9.34
+  MinDistance: 1
+  MaxDistance: 7
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -9842,41 +9842,41 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.2
+      time: 0.14285715
       value: 1
-      inSlope: -5.0019917
-      outSlope: -5.0019917
+      inSlope: -7.002809
+      outSlope: -7.002809
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.4
+      time: 0.2857143
       value: 0.5
-      inSlope: -1.2504979
-      outSlope: -1.2504979
+      inSlope: -1.7507023
+      outSlope: -1.7507023
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.6944092
-      value: 0.13319397
-      inSlope: -0.59256905
-      outSlope: -0.59256905
+      time: 0.68548805
+      value: 0.1875763
+      inSlope: -0.43767557
+      outSlope: -0.43767557
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33069164
+      inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 1
+      time: 0.9952221
       value: 0
-      inSlope: -0.20007975
-      outSlope: -0.20007975
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
-      outWeight: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
