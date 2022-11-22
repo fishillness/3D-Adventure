@@ -24,6 +24,7 @@ namespace SimpleFPS
         [SerializeField] public AudioClip[] m_FootstepSounds;    // an array of footstep sounds that will be randomly selected from.
         [SerializeField] public AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] public AudioClip m_LandSound;           // the sound played when character touches back on ground.
+        [SerializeField] public AudioClip m_FartingSound;        // the sound played when character presses 'F' :)
         [SerializeField] public float m_LandingSoundDelay = 2f;
 
         private Camera m_Camera;
@@ -155,6 +156,14 @@ namespace SimpleFPS
             m_AudioSource.clip = m_JumpSound;
             m_AudioSource.Play();
         }
+
+        //
+        public void PlayFartingSound()
+        {
+            m_AudioSource.clip = m_FartingSound;
+            m_AudioSource.Play();
+        }
+        //
 
 
         private void ProgressStepCycle(float speed)

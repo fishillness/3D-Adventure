@@ -6976,6 +6976,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1192053731910343088, guid: 13022391e9a770548ae823da2c48aaf4, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13022391e9a770548ae823da2c48aaf4, type: 3}
 --- !u!4 &291847873 stripped
@@ -23061,7 +23065,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb15fb7e26441bc42946de79e58c9825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPress: 0
   EscapeIsPressed:
     m_PersistentCalls:
       m_Calls:
@@ -23077,6 +23080,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  FIsPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 940840188}
+        m_TargetAssemblyTypeName: SimpleFPS.FirstPersonController, Assembly-CSharp
+        m_MethodName: PlayFartingSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &940840188 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+  m_PrefabInstance: {fileID: 2028016795}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940840183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ec5cf00ca181d45a42ba1870e148c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &943872648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51893,19 +51922,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 166.7
+      value: -40
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 45.1
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -57.3
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.77883816
+      value: 0.76818985
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalRotation.x
@@ -51913,7 +51942,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.62722486
+      value: 0.64022213
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalRotation.z
@@ -51930,6 +51959,54 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_DiedSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ef40528654d993148a19aa5954b9af81, type: 3}
+    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_FartingSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9ff5e65d78a8373409685a1f9e6b9832, type: 3}
+    - target: {fileID: 1781936116, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: impactEffect
+      value: 
+      objectReference: {fileID: 3322740394405171679, guid: 1b217f101197caf45b0af1c42619279a, type: 3}
+    - target: {fileID: 1781936116, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: Die.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781936116, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: Die.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781936116, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: Die.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 940840188}
+    - target: {fileID: 1781936116, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: Die.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781936116, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: Die.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayDiedSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781936116, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: Die.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: SimpleFPS.FirstPersonController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781936116, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: Die.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
