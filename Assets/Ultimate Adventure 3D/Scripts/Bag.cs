@@ -4,6 +4,7 @@ using UnityEngine.Events;
 public class Bag : MonoBehaviour
 {
     private int amountKey;
+    private int amountPressedButton;
     public UnityEvent ChangeAmountKey;
 
     public void AddKey (int amount)
@@ -24,5 +25,21 @@ public class Bag : MonoBehaviour
     public int GetAmountKey()
     {
         return amountKey;
+    }
+
+    public void AddPressedButton()
+    {
+        amountPressedButton++;
+    }
+    public bool DrawPressedButton(int amount)
+    {
+        if (amountPressedButton - amount < 0) return false;
+
+        amountPressedButton -= amount;
+        return true;
+    }
+    public int GetAmountPressedButton()
+    {
+        return amountPressedButton;
     }
 }
