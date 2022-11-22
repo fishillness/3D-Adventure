@@ -22,6 +22,14 @@ public class Destructible : MonoBehaviour
             Kill();
         }
     }
+    public void ApplyHealth(int health)
+    {
+        hitPoints += health;
+        if (hitPoints >= maxHitPoints)
+            hitPoints = maxHitPoints;
+
+        ChangeHitPoints.Invoke();
+    }
 
     public void Kill()
     {
